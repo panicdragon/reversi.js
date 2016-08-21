@@ -1,0 +1,517 @@
+@import "common_inc";
+
+body {
+    background: #333;
+    color: #fff;
+}
+p a {
+    position: relative;
+    font-size: 18px;
+    text-align: center;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    @include user-select(none);
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    .icon.github {
+        margin-bottom: -4px;
+    }
+}
+.btn-default {
+    color: #000;
+}
+
+section.top {
+    h1 {
+        width: 809px;
+        margin: 30px auto 0;
+    }
+    .container {
+        width: 1000px;
+        margin: 20px auto;
+    }
+}
+
+.container {
+    padding: 10px 0 20px;
+    h2 {
+        margin-bottom: 30px;
+        padding-bottom: 6px;
+        border-bottom: #fff 1px solid;
+        font-size: 30px;
+    }
+    h3 {
+        margin-top: 10px;
+        margin-bottom: 12px;
+        font-size: 24px;
+    }
+    pre {
+        display: block;
+        padding: 9.5px;
+        margin: 0 0 10px;
+        font-size: 13px;
+        line-height: 1.42857143;
+        color: #333;
+        word-break: break-all;
+        word-wrap: break-word;
+        background-color: #f5f5f5;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+    }
+    p {
+        line-height: 1.4;
+        a {
+            color: #64c7eb;
+            &:active,
+            &:visited {
+                color: #64c7eb;
+            }
+        }
+    }
+    .mainImage {
+        padding-bottom: 10px;
+    }
+}
+
+
+.demoView {
+    position: relative;
+    width: 1000px;
+    margin: 40px auto 0;
+    .title {
+        margin-bottom: 10px;
+        font-family: arial, sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        color: #fff;
+    }
+    .label {
+        margin-bottom: 6px;
+        font-family: arial, sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+        &.click {
+            position: absolute;
+            left: 530px;
+            top: 200px;
+            font-size: 96px;
+            opacity: 0.5;
+        }
+        &.sub {
+            font-size: 14px;
+            font-weight: normal;
+        }
+    }
+    #picker {
+        margin: 10px 0;
+    }
+    .form {
+        width: 200px;
+        margin-bottom: 10px;
+        input[type="text"],
+        input[type="range"] {
+            width: 200px;
+            margin-bottom: 6px;
+        }
+    }
+    .colorInput {
+        width: 180px;
+        padding: 10px;
+        input {
+            width: 170px;
+        }
+    }
+}
+
+.btn-default,
+.btn-primary,
+.btn-warning,
+.btn-danger {
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
+    @include box-shadow(inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075));
+}
+.btn-default:active,
+.btn-primary:active,
+.btn-warning:active,
+.btn-default.active,
+.btn-primary.active,
+.btn-info.active,
+.btn-warning.active {
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.btn:active,
+.btn.active {
+    background-image: none;
+}
+
+.btn-default {
+    text-shadow: 0 1px 0 #fff;
+    background-image: -webkit-linear-gradient(top, #fff 0%, #e0e0e0 100%);
+    background-image:      -o-linear-gradient(top, #fff 0%, #e0e0e0 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e0e0e0));
+    background-image:         linear-gradient(to bottom, #fff 0%, #e0e0e0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe0e0e0', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    background-repeat: repeat-x;
+    border-color: #dbdbdb;
+    border-color: #ccc;
+}
+.btn-default:hover,
+.btn-default:focus {
+    background-color: #e0e0e0;
+    background-position: 0 -15px;
+}
+.btn-default:active,
+.btn-default.active {
+    background-color: #e0e0e0;
+    border-color: #dbdbdb;
+}
+.btn-primary {
+    background-image: -webkit-linear-gradient(top, #337ab7 0%, #265a88 100%);
+    background-image:      -o-linear-gradient(top, #337ab7 0%, #265a88 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#337ab7), to(#265a88));
+    background-image:         linear-gradient(to bottom, #337ab7 0%, #265a88 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff265a88', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    background-repeat: repeat-x;
+    border-color: #245580;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #265a88;
+    background-position: 0 -15px;
+}
+.btn-primary:active,
+.btn-primary.active {
+    background-color: #265a88;
+    border-color: #245580;
+}
+.btn-warning {
+    background-image: -webkit-linear-gradient(top, #f0ad4e 0%, #eb9316 100%);
+    background-image:      -o-linear-gradient(top, #f0ad4e 0%, #eb9316 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f0ad4e), to(#eb9316));
+    background-image:         linear-gradient(to bottom, #f0ad4e 0%, #eb9316 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff0ad4e', endColorstr='#ffeb9316', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    background-repeat: repeat-x;
+    border-color: #e38d13;
+}
+.btn-warning:hover,
+.btn-warning:focus {
+    background-color: #eb9316;
+    background-position: 0 -15px;
+}
+.btn-warning:active,
+.btn-warning.active {
+    background-color: #eb9316;
+    border-color: #e38d13;
+}
+
+@media screen and (max-width: 768px) {
+    h2.mainTitle {
+        margin-top: 45px;
+        img { width: 250px; }
+    }
+    h2.mainDetail { font-size: 18px; }
+}
+
+/*
+* navbar
+*/
+.navbar {
+    .fb-like { margin-top: 16px; }
+}
+
+.fbBox {
+    width: 450px;
+    margin: 50px auto 0;
+}
+
+.optionsTable {
+    border-top: #fff 1px solid;
+    border-left: #fff 1px solid;
+    thead {
+        tr {
+            height: 30px;
+            line-height: 30px;
+            th {
+                border-right: #fff 1px solid;
+                border-bottom: #fff 1px solid;
+            }
+        }
+    }
+    tbody {
+        tr {
+            height: 30px;
+            line-height: 30px;
+            &:nth-child(even) {
+                background: #232323;
+            }
+            td {
+                padding: 8px;
+                border-right: #fff 1px solid;
+                border-bottom: #fff 1px solid;
+            }
+        }
+    }
+}
+
+
+/*
+* Paragraph Style
+*/
+.icon {
+    &.next {
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        background: url(#{$imgPath}/icon_sp.png) no-repeat;
+        @include background-size(20px auto);
+        background-position: left -34px;
+    }
+    &.github {
+        display: inline-block;
+        width: 21px;
+        height: 21px;
+        background: url(#{$imgPath}icon_github.png) no-repeat;
+        @include background-size(21px auto);
+    }
+
+    &.social {
+        display: block;
+        &.l {
+            background: url(#{$imgPath}/icon_social_l_sp.png) no-repeat;
+            @include background-size(auto 33px);
+            &.facebook {
+                width: 16px;
+                height: 30px;
+                background-position: left top;
+            }
+            &.twitter {
+                width: 32px;
+                height: 27px;
+                background-position: -19px top;
+            }
+            &.google {
+                width: 32px;
+                height: 32px;
+                background-position: -53px top;
+            }
+            &.hatena {
+                width: 30px;
+                height: 25px;
+                background-position: -87px top;
+            }
+            &.rss {
+                width: 33px;
+                height: 33px;
+                background-position: -232px top;
+            }
+        }
+
+        &.s {
+            background: url(#{$imgPath}/icon_social_s_sp.png) no-repeat;
+            @include background-size(auto 15px);
+            &.facebook {
+                width: 8px;
+                height: 15px;
+                background-position: left top;
+            }
+            &.twitter {
+                width: 16px;
+                height: 13px;
+                background-position: -9px top;
+            }
+            &.google {
+                width: 16px;
+                height: 16px;
+                background-position: -26px top;
+            }
+            &.hatena {
+                width: 15px;
+                height: 13px;
+                background-position: -43px top;
+            }
+            &.feedly {
+                width: 17px;
+                height: 15px;
+                background-position: -59px top;
+            }
+            &.pocket {
+                width: 15px;
+                height: 13px;
+                background-position: -78px top;
+            }
+            &.line {
+                width: 17px;
+                height: 15px;
+                background-position: -94px top;
+            }
+            &.rss {
+                width: 17px;
+                height: 17px;
+                background-position: -116px top;
+            }
+        }
+    }
+
+}
+
+/*
+* .socialLinkList
+*/
+.socialLinkList {
+    @include clearfix;
+    color: #000;
+    > li {
+        display: block;
+    }
+
+    &.circle {
+        > li {
+            width: 34px;
+            height: 34px;
+            background: url(#{$imgPath}/icon_social_circle_sp.png) no-repeat;
+            @include background-size(205px auto);
+            &.twitter { background-position: -42px top; }
+            &.hatena { background-position: -84px top; }
+            &.rss { background-position: -129px top; }
+            &.github { background-position: -171px top; }
+            > a {
+                display: block;
+                height: 34px;
+            }
+        }
+    }
+
+    &.share {
+        margin-top: 60px;
+        text-align: center;
+        vertical-align: top;
+        > li {
+            display: inline-block;
+            position: relative;
+            width: 60px;
+            height: 60px;
+            margin: 0 8px;
+            padding: 0;
+            background: #305097;
+            @include box-sizing(border-box);
+            border-radius: 4px;
+            > .iconWrap {
+                height: 60px;
+                .icon.social {
+                    margin: 40px auto 0;
+                    &.line { margin: 24px auto 0;}
+                }
+            }
+
+            &.twitter { background: #00aced; }
+            &.hatena { background: #008fde; }
+            &.google { background: #db4a39; }
+            &.pocket { background: #d3505a; }
+            &.line { background: #00c300; }
+
+            .count {
+                position: absolute;
+                top: 5px;
+                left: 4%;
+                width: 92%;
+                height: 15px;
+                background: #fff;
+                border-radius: 2px;
+                > .txt {
+                    font-size: 12px;
+                    text-align: center;
+                    line-height: 15px;
+                }
+                &::before {
+                    @include createStyle;
+                    bottom: -7px;
+                    left: 50%;
+                    height: 0px;
+                    width: 0px;
+                    margin: 0 0 0 -4px;
+                    border-top: #fff 8px solid;
+                    border-left: 4px solid transparent;
+                    border-right: 4px solid transparent;
+                    border-bottom: 0px solid transparent;
+                }
+            }
+
+            .btn {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 60px;
+                z-index: 10;
+                > a {
+                    display: block;
+                    width: 100%;
+                    height: 60px;
+                }
+            }
+        }
+    }
+}
+
+
+
+/*
+* footer Style
+*/
+footer {
+    @include clearfix;
+    position: relative;
+    height: 150px;
+    margin-top: 50px;
+    padding-top: 20px;
+    background: #3d3d3d;
+    .logo {
+        float: left;
+        width: 160px;
+        padding: 4px 0;
+        text-align: center;
+    }
+    .copyright {
+        position: absolute;
+        bottom: 6px;
+        width: 100%;
+        font-size: 11px;
+        color: #fff;
+        text-align: center;
+    }
+    .socialLinkList.circle {
+        float: right;
+        margin-top: 0;
+        > li {
+            float: left;
+            margin-right: 10px;
+        }
+    }
+}

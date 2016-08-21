@@ -1,0 +1,16 @@
+{
+  "name": "reversi.js",
+  "version": "1.0.0",
+  "main": "dist/reversi.js",
+  "authors": [
+    "daisuke.takayama"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

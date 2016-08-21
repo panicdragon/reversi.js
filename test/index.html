@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../public/js/reversi.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.2.5/mocha.min.css">
+    <script src="test.js"></script>
+    <!-- mocha -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.2.5/mocha.min.js"></script>
+    <!-- chai -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.0.0/chai.min.js"></script>
+</head>
+<body>
+    <!-- mocha初期化 -->
+    <script>mocha.setup('bdd');</script>
+
+    <!-- ここにテストコードを書く -->
+    <script src="test.js"></script>
+
+    <!-- mochaのUI -->
+    <div id="mocha"></div>
+    <!-- mochaを実行 -->
+    <script>
+        mocha.checkLeaks();
+        // 必要なら他のグローバルオブジェクトを配列に追記する
+        mocha.run();
+    </script>
+</body>
+</html>
